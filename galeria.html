@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="es-CL">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Galería de eventos NEON BEATS. Fotos de bodas, fiestas corporativas, eventos privados y conciertos realizados." />
+  <meta name="keywords" content="galería DJ Chile, fotos eventos Santiago, portafolio productora eventos" />
+
+  <title>Galería - NEON BEATS | Eventos Realizados</title>
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            'outfit': ['Outfit', 'sans-serif'],
+            'orbitron': ['Orbitron', 'sans-serif']
+          },
+          colors: {
+            'neon-pink': '#ec4899',
+            'neon-purple': '#a855f7',
+            'neon-violet': '#7c3aed'
+          }
+        }
+      }
+    }
+  </script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Orbitron:wght@500;700;900&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body class="bg-black text-white font-outfit">
+
+  <div id="navbar-container"></div>
+
+  <!-- ===== BANNER ===== -->
+  <section class="page-banner">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <h1 class="text-5xl md:text-6xl font-bold mb-4 hero-title">Nuestra <span class="text-neon-pink">Galería</span></h1>
+      <p class="text-xl text-gray-300 max-w-3xl mx-auto">Revive los mejores momentos de nuestros eventos</p>
+    </div>
+  </section>
+
+  <!-- ===== FILTROS + GALERÍA ===== -->
+  <section class="py-12">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+
+      <!-- Filtros -->
+      <div class="flex flex-wrap justify-center gap-3 mb-12" id="galeria-filtros">
+        <!-- Renderizado por JS -->
+      </div>
+
+      <!-- Grid -->
+      <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4" id="galeria-grid">
+        <!-- Renderizado por JS -->
+      </div>
+
+      <!-- Contador -->
+      <div class="text-center mt-8 text-gray-500 text-sm">
+        <span id="galeria-count"></span> imágenes
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CTA ===== -->
+  <section class="py-20 bg-gradient-dark">
+    <div class="max-w-4xl mx-auto px-4 text-center reveal">
+      <h2 class="text-4xl md:text-5xl font-bold mb-6">¿Quieres ser el <span class="text-neon-pink">próximo</span>?</h2>
+      <p class="text-xl text-gray-300 mb-8">Hagamos que tu evento también sea memorable.</p>
+      <a href="contacto.html" class="btn-neon">Reservar Fecha</a>
+    </div>
+  </section>
+
+  <div id="footer-container"></div>
+
+  <script src="js/data.js"></script>
+  <script src="js/main.js"></script>
+  <script src="js/galeria.js"></script>
+  <script>
+    injectLayout('galeria');
+
+    // Actualizar contador cuando cambia el filtro
+    const observer = new MutationObserver(() => {
+      const count = document.querySelectorAll('#galeria-grid .gallery-item').length;
+      document.getElementById('galeria-count').textContent = count;
+    });
+    observer.observe(document.getElementById('galeria-grid'), { childList: true });
+  </script>
+</body>
+</html>

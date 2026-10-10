@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="es-CL">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Contacta a NEON BEATS - Productora de eventos en Santiago, Chile. Formulario de contacto, WhatsApp, ubicación y horarios de atención." />
+  <meta name="keywords" content="contacto DJ Chile, NEON BEATS Santiago, productora eventos Las Condes" />
+
+  <title>Contacto - NEON BEATS | Reservas y Consultas</title>
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            'outfit': ['Outfit', 'sans-serif'],
+            'orbitron': ['Orbitron', 'sans-serif']
+          },
+          colors: {
+            'neon-pink': '#ec4899',
+            'neon-purple': '#a855f7',
+            'neon-violet': '#7c3aed'
+          }
+        }
+      }
+    }
+  </script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Orbitron:wght@500;700;900&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body class="bg-black text-white font-outfit">
+
+  <div id="navbar-container"></div>
+
+  <!-- ===== BANNER ===== -->
+  <section class="page-banner">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <h1 class="text-5xl md:text-6xl font-bold mb-4 hero-title">Hablemos de tu <span class="text-neon-pink">evento</span></h1>
+      <p class="text-xl text-gray-300 max-w-3xl mx-auto">Estamos listos para ayudarte. Múltiples formas de contactarnos.</p>
+    </div>
+  </section>
+
+  <!-- ===== INFORMACIÓN + FORMULARIO ===== -->
+  <section class="py-20">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
+
+        <!-- COLUMNA IZQUIERDA: Información de contacto -->
+        <div class="lg:col-span-1 space-y-6">
+
+          <!-- Card Email -->
+          <div class="card-neon reveal-left">
+            <div class="text-3xl mb-3">📧</div>
+            <h3 class="text-lg font-bold text-white mb-2">Email</h3>
+            <a href="mailto:${'contacto@neonbeats.cl'}" id="email-link" class="text-neon-pink hover:underline break-all"></a>
+            <p class="text-gray-500 text-sm mt-2">Respondemos en menos de 24 hrs</p>
+          </div>
+
+          <!-- Card Teléfono -->
+          <div class="card-neon reveal-left" style="transition-delay: 0.1s">
+            <div class="text-3xl mb-3">📱</div>
+            <h3 class="text-lg font-bold text-white mb-2">Teléfono / WhatsApp</h3>
+            <a href="tel:+56987654321" id="telefono-link" class="text-neon-pink hover:underline"></a>
+            <p class="text-gray-500 text-sm mt-2">Lun-Vie 10:00-20:00</p>
+          </div>
+
+          <!-- Card Dirección -->
+          <div class="card-neon reveal-left" style="transition-delay: 0.2s">
+            <div class="text-3xl mb-3">📍</div>
+            <h3 class="text-lg font-bold text-white mb-2">Oficina</h3>
+            <p id="direccion-texto" class="text-gray-300"></p>
+          </div>
+
+          <!-- Card Redes -->
+          <div class="card-neon reveal-left" style="transition-delay: 0.3s">
+            <div class="text-3xl mb-3">🌐</div>
+            <h3 class="text-lg font-bold text-white mb-2">Síguenos</h3>
+            <div class="flex gap-3 mt-3">
+              <a href="https://instagram.com/neonbeats.cl" target="_blank" rel="noopener noreferrer" class="w-10 h-10 rounded-full bg-gray-800 hover:bg-gradient-neon flex items-center justify-center transition-all" aria-label="Instagram">
+                <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/></svg>
+              </a>
+              <a href="https://facebook.com/neonbeatscl" target="_blank" rel="noopener noreferrer" class="w-10 h-10 rounded-full bg-gray-800 hover:bg-gradient-neon flex items-center justify-center transition-all" aria-label="Facebook">
+                <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
+              </a>
+              <a href="https://tiktok.com/@neonbeats.cl" target="_blank" rel="noopener noreferrer" class="w-10 h-10 rounded-full bg-gray-800 hover:bg-gradient-neon flex items-center justify-center transition-all" aria-label="TikTok">
+                <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M12.525.02c1.31-.02 2.61-.01 3.91-.02.08 1.53.63 3.09 1.75 4.17 1.12 1.11 2.7 1.62 4.24 1.79v4.03c-1.44-.05-2.89-.35-4.2-.97-.57-.26-1.1-.59-1.62-.93-.01 2.92.01 5.84-.02 8.75-.08 1.4-.54 2.79-1.35 3.94-1.31 1.92-3.58 3.17-5.91 3.21-1.43.08-2.86-.31-4.08-1.03-2.02-1.19-3.44-3.37-3.65-5.71-.02-.5-.03-1-.01-1.49.18-1.9 1.12-3.72 2.58-4.96 1.66-1.44 3.98-2.13 6.15-1.72.02 1.48-.04 2.96-.04 4.44-.99-.32-2.15-.23-3.02.37-.63.41-1.11 1.04-1.36 1.75-.21.51-.15 1.07-.14 1.61.24 1.64 1.82 3.02 3.5 2.87 1.12-.01 2.19-.66 2.77-1.61.19-.33.4-.67.41-1.06.1-1.79.06-3.57.07-5.36.01-4.03-.01-8.05.02-12.07z"/></svg>
+              </a>
+              <a href="https://youtube.com/@neonbeatscl" target="_blank" rel="noopener noreferrer" class="w-10 h-10 rounded-full bg-gray-800 hover:bg-gradient-neon flex items-center justify-center transition-all" aria-label="YouTube">
+                <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- COLUMNA DERECHA: Formulario -->
+        <div class="lg:col-span-2 reveal-right">
+          <div class="card-neon">
+            <h2 class="text-3xl font-bold text-white mb-2">Envíanos tu consulta</h2>
+            <p class="text-gray-400 mb-8">Completa el formulario y nos pondremos en contacto a la brevedad.</p>
+
+            <form id="contact-form" class="space-y-5" novalidate>
+
+              <div class="grid grid-cols-1 md:grid-cols-2 gap-5">
+                <div>
+                  <label for="nombre" class="block text-sm font-medium text-gray-300 mb-2">Nombre completo *</label>
+                  <input type="text" id="nombre" name="nombre" class="form-input" placeholder="Tu nombre" required />
+                  <div class="form-error hidden"></div>
+                </div>
+
+                <div>
+                  <label for="email" class="block text-sm font-medium text-gray-300 mb-2">Email *</label>
+                  <input type="email" id="email" name="email" class="form-input" placeholder="tu@email.com" required />
+                  <div class="form-error hidden"></div>
+                </div>
+              </div>
+
+              <div class="grid grid-cols-1 md:grid-cols-2 gap-5">
+                <div>
+                  <label for="telefono" class="block text-sm font-medium text-gray-300 mb-2">Teléfono *</label>
+                  <input type="tel" id="telefono" name="telefono" class="form-input" placeholder="+56 9 1234 5678" required />
+                  <div class="form-error hidden"></div>
+                </div>
+
+                <div>
+                  <label for="invitados" class="block text-sm font-medium text-gray-300 mb-2">Nº de invitados</label>
+                  <input type="number" id="invitados" name="invitados" class="form-input" placeholder="Ej: 100" min="1" />
+                </div>
+              </div>
+
+              <div class="grid grid-cols-1 md:grid-cols-2 gap-5">
+                <div>
+                  <label for="tipoEvento" class="block text-sm font-medium text-gray-300 mb-2">Tipo de evento *</label>
+                  <select id="tipoEvento" name="tipoEvento" class="form-input" required>
+                    <option value="">Selecciona una opción</option>
+                    <option value="boda">Boda</option>
+                    <option value="corporativo">Evento Corporativo</option>
+                    <option value="cumpleanos">Cumpleaños</option>
+                    <option value="quinceanera">Quinceañera</option>
+                    <option value="aniversario">Aniversario</option>
+                    <option value="concierto">Concierto / Show</option>
+                    <option value="otro">Otro</option>
+                  </select>
+                  <div class="form-error hidden"></div>
+                </div>
+
+                <div>
+                  <label for="fechaEvento" class="block text-sm font-medium text-gray-300 mb-2">Fecha del evento *</label>
+                  <input type="date" id="fechaEvento" name="fechaEvento" class="form-input" required />
+                  <div class="form-error hidden"></div>
+                </div>
+              </div>
+
+              <div>
+                <label for="mensaje" class="block text-sm font-medium text-gray-300 mb-2">Cuéntanos sobre tu evento *</label>
+                <textarea id="mensaje" name="mensaje" rows="5" class="form-input" placeholder="Describe tu evento, estilo musical que te gustaría, ideas especiales, etc." required></textarea>
+                <div class="form-error hidden"></div>
+              </div>
+
+              <button type="submit" class="btn-neon w-full text-lg flex items-center justify-center gap-2">
+                <span class="btn-text">Enviar Consulta</span>
+                <span class="btn-spinner hidden">
+                  <span class="spinner"></span>
+                  <span class="ml-2">Enviando...</span>
+                </span>
+              </button>
+
+              <p class="text-gray-500 text-xs text-center mt-4">
+                Al enviar este formulario aceptas nuestra
+                <a href="politica-de-privacidad.html" class="text-neon-pink hover:underline">Política de Privacidad</a>.
+              </p>
+            </form>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== MAPA + HORARIOS ===== -->
+  <section class="py-20 bg-gradient-dark">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+
+        <!-- Mapa -->
+        <div class="reveal-left">
+          <h2 class="text-3xl font-bold mb-6">Nuestra <span class="text-neon-pink">ubicación</span></h2>
+          <p class="text-gray-400 mb-6">Visítanos en nuestra oficina. Te recomendamos agendar una reunión previa.</p>
+          <div class="rounded-2xl overflow-hidden shadow-2xl border border-purple-900/30">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3331.4095442994856!2d-70.57298738480226!3d-33.4097809807949!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9662cf5c9f4e7e9d%3A0x8e1f9b9e9e9e9e9e!2sAv.%20Apoquindo%204501%2C%20Las%20Condes%2C%20Chile!5e0!3m2!1ses-419!2scl!4v1696000000000"
+              width="100%"
+              height="400"
+              style="border:0;"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+              title="Ubicación NEON BEATS - Las Condes, Santiago">
+            </iframe>
+          </div>
+        </div>
+
+        <!-- Horarios -->
+        <div class="reveal-right">
+          <h2 class="text-3xl font-bold mb-6">Horarios de <span class="text-neon-pink">atención</span></h2>
+          <p class="text-gray-400 mb-6">Estamos disponibles para atenderte en los siguientes horarios:</p>
+
+          <div class="card-neon">
+            <table class="schedule-table">
+              <tbody id="horarios-container">
+                <!-- Renderizado por JS -->
+              </tbody>
+            </table>
+          </div>
+
+          <div class="mt-6 card-neon bg-gradient-to-br from-purple-900/20 to-pink-900/20">
+            <h4 class="text-white font-bold mb-3 flex items-center gap-2">
+              <span>💬</span>
+              ¿Prefieres WhatsApp?
+            </h4>
+            <p class="text-gray-300 text-sm mb-4">Escríbenos directamente y te responderemos en minutos durante horario de atención.</p>
+            <a id="whatsapp-link" href="#" target="_blank" rel="noopener noreferrer" class="btn-neon inline-flex items-center gap-2">
+              <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+              Abrir WhatsApp
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div id="footer-container"></div>
+
+  <script src="js/data.js"></script>
+  <script src="js/main.js"></script>
+  <script>
+    injectLayout('contacto');
+
+    // Renderizar info de contacto
+    document.getElementById('email-link').textContent = djData.contacto.email;
+    document.getElementById('email-link').href = 'mailto:' + djData.contacto.email;
+    document.getElementById('telefono-link').textContent = djData.contacto.telefono;
+    document.getElementById('telefono-link').href = 'tel:' + djData.contacto.telefono.replace(/\s/g, '');
+    document.getElementById('direccion-texto').textContent = djData.contacto.direccion;
+
+    // WhatsApp link
+    document.getElementById('whatsapp-link').href = `https://wa.me/${djData.contacto.whatsapp}?text=${encodeURIComponent('Hola! Me gustaría información sobre sus servicios.')}`;
+
+    // Renderizar horarios
+    const diasSemana = ['Domingo', 'Lunes', 'Martes', 'Miércoles', 'Jueves', 'Viernes', 'Sábado'];
+    const horariosHTML = djData.contacto.horarios.map(h => `
+      <tr>
+        <td class="font-semibold text-white">${h.dia}</td>
+        <td class="text-right text-gray-300">${h.horario}</td>
+      </tr>
+    `).join('');
+    document.getElementById('horarios-container').innerHTML = horariosHTML;
+  </script>
+  <script src="js/contact-form.js"></script>
+</body>
+</html>

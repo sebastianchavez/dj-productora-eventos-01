@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="es-CL">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Conoce a NEON BEATS - Productora de eventos con más de 10 años de experiencia en Chile. Nuestra historia, misión y valores." />
+  <meta name="keywords" content="sobre NEON BEATS, productora eventos Chile, historia DJ Santiago" />
+
+  <title>Sobre Nosotros - NEON BEATS | Productora de Eventos</title>
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            'outfit': ['Outfit', 'sans-serif'],
+            'orbitron': ['Orbitron', 'sans-serif']
+          },
+          colors: {
+            'neon-pink': '#ec4899',
+            'neon-purple': '#a855f7',
+            'neon-violet': '#7c3aed'
+          }
+        }
+      }
+    }
+  </script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Orbitron:wght@500;700;900&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body class="bg-black text-white font-outfit">
+
+  <div id="navbar-container"></div>
+
+  <!-- ===== BANNER ===== -->
+  <section class="page-banner">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <h1 class="text-5xl md:text-6xl font-bold mb-4 hero-title">Sobre <span class="text-neon-pink">Nosotros</span></h1>
+      <p class="text-xl text-gray-300 max-w-3xl mx-auto">Más de una década creando experiencias inolvidables</p>
+    </div>
+  </section>
+
+  <!-- ===== HISTORIA ===== -->
+  <section class="py-20">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+        <!-- Imagen -->
+        <div class="reveal-left">
+          <div class="relative">
+            <div class="absolute -inset-4 bg-gradient-neon rounded-2xl blur-2xl opacity-30"></div>
+            <img src="https://images.unsplash.com/photo-1496337589254-7e19d01cec44?w=900&q=80"
+                 alt="DJ NEON BEATS en cabina"
+                 class="relative rounded-2xl shadow-2xl w-full" />
+          </div>
+        </div>
+
+        <!-- Texto -->
+        <div class="reveal-right">
+          <p class="text-neon-pink font-semibold tracking-widest uppercase mb-3">Nuestra Historia</p>
+          <h2 class="text-4xl md:text-5xl font-bold mb-6">Una década <span class="text-neon-pink">encendiendo</span> la noche</h2>
+          <p class="text-gray-300 mb-4 leading-relaxed" id="historia-texto-1"></p>
+          <p class="text-gray-300 mb-6 leading-relaxed" id="historia-texto-2"></p>
+          <div class="grid grid-cols-3 gap-4 pt-6 border-t border-gray-800">
+            <div>
+              <div class="text-3xl font-bold text-neon-pink">2014</div>
+              <div class="text-gray-400 text-sm">Año fundación</div>
+            </div>
+            <div>
+              <div class="text-3xl font-bold text-neon-pink">500+</div>
+              <div class="text-gray-400 text-sm">Eventos</div>
+            </div>
+            <div>
+              <div class="text-3xl font-bold text-neon-pink">100%</div>
+              <div class="text-gray-400 text-sm">Compromiso</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== MISIÓN, VISIÓN, VALORES ===== -->
+  <section class="py-20 bg-gradient-dark">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center mb-16 reveal">
+        <h2 class="text-4xl md:text-5xl font-bold mb-4">Lo que nos <span class="text-neon-pink">define</span></h2>
+        <p class="text-gray-400 text-lg max-w-2xl mx-auto">Nuestros principios fundamentales guían cada evento que realizamos.</p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mb-12">
+        <!-- Misión -->
+        <div class="card-neon reveal">
+          <div class="text-5xl mb-4">🎯</div>
+          <h3 class="text-2xl font-bold mb-3 text-white">Nuestra Misión</h3>
+          <p class="text-gray-300 leading-relaxed" id="mision-texto"></p>
+        </div>
+
+        <!-- Visión -->
+        <div class="card-neon reveal" style="transition-delay: 0.1s">
+          <div class="text-5xl mb-4">🔭</div>
+          <h3 class="text-2xl font-bold mb-3 text-white">Nuestra Visión</h3>
+          <p class="text-gray-300 leading-relaxed" id="vision-texto"></p>
+        </div>
+      </div>
+
+      <!-- Valores -->
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6" id="valores-container">
+        <!-- Renderizado por JS -->
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== EQUIPO ===== -->
+  <section class="py-20">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center mb-16 reveal">
+        <h2 class="text-4xl md:text-5xl font-bold mb-4">Nuestro <span class="text-neon-pink">Equipo</span></h2>
+        <p class="text-gray-400 text-lg max-w-2xl mx-auto">Profesionales apasionados por la música y la producción de eventos.</p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div class="text-center reveal">
+          <div class="relative mb-4 inline-block">
+            <div class="absolute -inset-2 bg-gradient-neon rounded-full blur-xl opacity-40"></div>
+            <img src="https://images.unsplash.com/photo-1493225457124-a3eb161ffa5f?w=400&q=80"
+                 alt="DJ Alejandro Soto"
+                 class="relative w-48 h-48 rounded-full object-cover mx-auto" />
+          </div>
+          <h3 class="text-xl font-bold mb-1">Alejandro Soto</h3>
+          <p class="text-neon-pink text-sm mb-3">DJ Principal & Fundador</p>
+          <p class="text-gray-400 text-sm">Más de 15 años en cabinas. Especialista en bodas y eventos corporativos.</p>
+        </div>
+
+        <div class="text-center reveal" style="transition-delay: 0.1s">
+          <div class="relative mb-4 inline-block">
+            <div class="absolute -inset-2 bg-gradient-neon rounded-full blur-xl opacity-40"></div>
+            <img src="https://images.unsplash.com/photo-1539571696357-5a69c17a67c6?w=400&q=80"
+                 alt="Valentina Rojas"
+                 class="relative w-48 h-48 rounded-full object-cover mx-auto" />
+          </div>
+          <h3 class="text-xl font-bold mb-1">Valentina Rojas</h3>
+          <p class="text-neon-pink text-sm mb-3">Productora de Eventos</p>
+          <p class="text-gray-400 text-sm">Coordinadora logística. Se encarga de que cada detalle sea perfecto.</p>
+        </div>
+
+        <div class="text-center reveal" style="transition-delay: 0.2s">
+          <div class="relative mb-4 inline-block">
+            <div class="absolute -inset-2 bg-gradient-neon rounded-full blur-xl opacity-40"></div>
+            <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=400&q=80"
+                 alt="Matías Fuentes"
+                 class="relative w-48 h-48 rounded-full object-cover mx-auto" />
+          </div>
+          <h3 class="text-xl font-bold mb-1">Matías Fuentes</h3>
+          <p class="text-neon-pink text-sm mb-3">Técnico de Sonido</p>
+          <p class="text-gray-400 text-sm">Ingeniero en sonido. Experto en equipos profesionales e iluminación.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CTA ===== -->
+  <section class="py-20 bg-gradient-dark">
+    <div class="max-w-4xl mx-auto px-4 text-center reveal">
+      <h2 class="text-4xl md:text-5xl font-bold mb-6">¿Quieres conocer <span class="text-neon-pink">nuestros servicios</span>?</h2>
+      <p class="text-xl text-gray-300 mb-8">Descubre todo lo que podemos ofrecerte.</p>
+      <div class="flex flex-col sm:flex-row gap-4 justify-center">
+        <a href="servicios.html" class="btn-neon">Ver Servicios</a>
+        <a href="contacto.html" class="btn-outline-neon">Contactar</a>
+      </div>
+    </div>
+  </section>
+
+  <div id="footer-container"></div>
+
+  <script src="js/data.js"></script>
+  <script src="js/main.js"></script>
+  <script>
+    injectLayout('sobre-nosotros');
+
+    // Renderizar textos largos
+    document.getElementById('historia-texto-1').textContent = djData.empresa.descripcionLarga;
+    document.getElementById('mision-texto').textContent = djData.nosotros.mision;
+    document.getElementById('vision-texto').textContent = djData.nosotros.vision;
+
+    // Renderizar valores
+    const valoresHTML = djData.nosotros.valores.map((v, i) => `
+      <div class="card-neon reveal" style="transition-delay: ${i * 0.1}s">
+        <div class="text-3xl mb-3">${['💜', '⚡', '🚀', '🤝'][i] || '✨'}</div>
+        <h4 class="text-lg font-bold text-white mb-2">${v.titulo}</h4>
+        <p class="text-gray-400 text-sm">${v.descripcion}</p>
+      </div>
+    `).join('');
+    document.getElementById('valores-container').innerHTML = valoresHTML;
+
+    if (typeof setupRevealObserver === 'function') {
+      setTimeout(() => setupRevealObserver(), 100);
+    }
+  </script>
+</body>
+</html>
